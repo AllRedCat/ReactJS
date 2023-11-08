@@ -6,7 +6,9 @@ function App() {
     <div className="App">
       <header>
         <div className="logo-space">
-          LogoX
+          <a href="#">
+            LogoX
+          </a>
         </div>
         <nav>
           <ul>
