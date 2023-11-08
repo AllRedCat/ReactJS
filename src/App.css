@@ -1,3 +1,22 @@
+:root {
+  /* paleta de cores RSPR */
+  --deep-blue: #172934;
+  --red: #D63B46;
+  --dark-red: #8A272D;
+  --orange: #EC783C;
+  --dark-orange: #A15028;
+  --yellow: #F1A92F;
+  --dark-yellow: #AB7922;
+  /* cores do projeto */
+  --black: #1A1A1A;
+  --light-dark: #333333;
+  --dark-gray: #4D4D4D;
+  --gray: #808080;
+  --light-gray: #B3B3B3;
+  --dark-white: #CCCCCC;
+  --white: #E6E6E6;
+}
+
 /* App.css */
 
 .App {
