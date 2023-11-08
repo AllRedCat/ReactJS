@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
 :root {
   /* paleta de cores RSPR */
   --deep-blue: #172934;
@@ -26,10 +28,10 @@
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: var(--black);
+  background-color: var(--white);
+  width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: 10% 90%;
 }
 
 header {
@@ -69,22 +71,24 @@ nav a {
 
 main {
   margin: 20px;
-  background-color: var(--light-dark);
+  /* background-color: var(--light-dark); */
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 10% 90%;
   gap: 2rem;
 }
 
 .navigation {
+  height: fit-content;
   width: 100%;
-  background-color: var(--dark-gray);
+  /* background-color: var(--dark-gray); */
   margin: 20px 0;
   padding: 20px;
   border-style: none;
   border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   align-items: center;
   justify-content: center;
 }
@@ -96,12 +100,11 @@ main {
 }
 
 .navigation-links {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .navigation-links li {
@@ -111,15 +114,19 @@ main {
 .navigation-links button {
   width: 100%;
   height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   border-style: none;
   background-color: transparent;
-  color: var(--white);
-  font-size: 26px;
+  color: var(--black);
+  font-size: 20px;
+  text-align: left;
 }
 
 .navigation-links button:hover {
   border-radius: 5px;
-  background-color: var(--light-dark);
+  background-color: var(--dark-white);
   cursor: pointer;
 }
 
@@ -131,11 +138,11 @@ main {
 section {
   margin: 20px;
   padding: 20px;
-  background-color: var(--dark-gray);
+  /* background-color: var(--dark-gray); */
   border-style: none;
   border-radius: 5px;
 }
-
+About
 h2 {
   color: var(--white);
   font-size: 24px;
@@ -145,4 +152,30 @@ h2 {
 /* Style the active link in the navigation */
 nav a.active {
   text-decoration: underline;
+}
+
+/* boards */
+
+.visor {
+  display: block;
+}
+
+.dashboard {
+  display: none;
+}
+
+.Servers {
+  display: none;
+}
+
+.Services {
+  display: none;
+}
+
+.Github {
+  display: none;
+}
+
+.About {
+  display: none;
 }

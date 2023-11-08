@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header>
+      {/* <header>
         <div className="logo-space">
           <a href="#">
             LogoX
@@ -13,11 +13,11 @@ function App() {
         <nav>
           <ul>
             <li><a href="/pipelines">GitHub</a></li>
-            <li><a href="/monitoring">Services</a></li>
+            <li><a href="/monitoring"> Services</a></li>
             <li><a href="/settings">About</a></li>
           </ul>
         </nav>
-      </header>
+      </header> */}
 
       <main>
         <aside className="navigation">
@@ -25,27 +25,40 @@ function App() {
             <ul className="navigation-links">
               <li>
                 <button>
-                  Dahsboard
+                  <span class="material-symbols-outlined">
+                    dashboard
+                  </span>
+                  <p>Dahsboard</p>
                 </button>
               </li>
               <li>
                 <button>
-                  Deployments
+                  <span class="material-symbols-outlined">
+                    dns
+                  </span>
+                  <p>Servers</p>
                 </button>
               </li>
               <li>
                 <button>
-                  Pipelines
+                  <span class="material-symbols-outlined">
+                    lan
+                  </span>
+                  <p>Services</p>
                 </button>
               </li>
               <li>
                 <button>
-                  Monitoring
+                  <i class="bi bi-github"></i>
+                  <p>GitHub</p>
                 </button>
               </li>
               <li>
                 <button>
-                  Settings
+                  <span class="material-symbols-outlined">
+                    account_circle
+                  </span>
+                  <p>About</p>
                 </button>
               </li>
             </ul>
@@ -58,23 +71,23 @@ function App() {
             {/* Add dashboard content here */}
           </section>
 
-          <section className="deployments">
-            <h2>Deployments</h2>
+          <section className="Servers">
+            <h2>Serves</h2>
             {/* Add deployments content here */}
           </section>
 
-          <section className="pipelines">
-            <h2>Pipelines</h2>
+          <section className="Services">
+            <h2>Services</h2>
             {/* Add pipelines content here */}
           </section>
 
-          <section className="monitoring">
-            <h2>Monitoring</h2>
+          <section className="Github">
+            <h2>GitHub</h2>
             {/* Add monitoring content here */}
           </section>
 
-          <section className="settings">
-            <h2>Settings</h2>
+          <section className="About">
+            <h2>About</h2>
             {/* Add settings content here */}
           </section>
         </div>
