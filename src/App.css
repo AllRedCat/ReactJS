@@ -28,11 +28,20 @@
 header {
   color: #fff;
   padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-space{
+  font-size: 28px;
+  font-weight: 600;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  margin-right: 20px;
 }
 
 nav li {
@@ -46,16 +55,62 @@ nav a {
   font-weight: bold;
 }
 
+
 main {
   margin: 20px;
   background-color: var(--light-dark);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 2rem;
+}
+
+.navigation {
+  width: 100%;
+  background-color: var(--dark-gray);
+  margin: 20px 0;
+  padding: 20px;
+  border-style: none;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation nav{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-links{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-links button{
+  width: 100%;
+  border-style: none;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  font-size: 36px;
+}
+
+.navigation-links button:hover{
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+.visor{
+  width: 100%;;
 }
 
 section {
-  margin: 20px 0;
+  margin: 20px;
   padding: 20px;
   background-color: var(--dark-gray);
   border-style: none;
