@@ -1,6 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 
+function DashboardShow() { 
+  console.log('ok');
+  const Dashboard = document.querySelector("#dashboard");
+  const DashboardOn = Dashboard.getAttribute("data-visible");
+
+  if (DashboardOn === "false"){
+    Dashboard.setAttribute("data-visble", true);
+  }
+  else if (DashboardOn === "true"){
+    Dashboard.setAttribute("data-visible", false);
+  }
+}
+
 function App() {
   return (
     <div className="App">
@@ -24,8 +37,8 @@ function App() {
           <nav>
             <ul className="navigation-links">
               <li>
-                <button>
-                  <span class="material-symbols-outlined">
+                <button onClick={DashboardShow}>
+                  <span className="material-symbols-outlined">
                     dashboard
                   </span>
                   <p>Dahsboard</p>
@@ -33,7 +46,7 @@ function App() {
               </li>
               <li>
                 <button>
-                  <span class="material-symbols-outlined">
+                  <span className="material-symbols-outlined">
                     dns
                   </span>
                   <p>Servers</p>
@@ -41,7 +54,7 @@ function App() {
               </li>
               <li>
                 <button>
-                  <span class="material-symbols-outlined">
+                  <span className="material-symbols-outlined">
                     lan
                   </span>
                   <p>Services</p>
@@ -49,13 +62,13 @@ function App() {
               </li>
               <li>
                 <button>
-                  <i class="bi bi-github"></i>
+                  <i className="bi bi-github"></i>
                   <p>GitHub</p>
                 </button>
               </li>
               <li>
                 <button>
-                  <span class="material-symbols-outlined">
+                  <span className="material-symbols-outlined">
                     account_circle
                   </span>
                   <p>About</p>
@@ -66,7 +79,7 @@ function App() {
         </aside>
 
         <div className="visor">
-          <section className="dashboard">
+          <section id="dashboard" className="dashboard" data-visible="false">
             <h2>Dashboard</h2>
             {/* Add dashboard content here */}
           </section>

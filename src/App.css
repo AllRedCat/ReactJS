@@ -84,7 +84,7 @@ main {
   height: fit-content;
   width: 100%;
   /* background-color: var(--dark-gray); */
-  margin: 20px 0;
+  margin: 20px;
   padding: 20px;
   border-style: none;
   border-radius: 5px;
@@ -132,17 +132,16 @@ main {
 
 .visor {
   width: 100%;
-  ;
+  display: block;
 }
 
 section {
-  margin: 20px;
   padding: 20px;
   /* background-color: var(--dark-gray); */
   border-style: none;
   border-radius: 5px;
 }
-About
+
 h2 {
   color: var(--white);
   font-size: 24px;
@@ -156,12 +155,12 @@ nav a.active {
 
 /* boards */
 
-.visor {
-  display: block;
-}
 
-.dashboard {
+.dashboard[data-visible="false"] {
   display: none;
+}
+.dashboard[data-visible="true"] {
+  display: block;
 }
 
 .Servers {
