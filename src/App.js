@@ -1,20 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 
-function DashboardShow() { 
-  console.log('ok');
-  const Dashboard = document.querySelector("#dashboard");
-  const DashboardOn = Dashboard.getAttribute("data-visible");
-
-  if (DashboardOn === "false"){
-    Dashboard.setAttribute("data-visble", true);
-  }
-  else if (DashboardOn === "true"){
-    Dashboard.setAttribute("data-visible", false);
-  }
-}
-
 function App() {
+
+  function DashboardShow() {
+    console.log('ok');
+    const Dashboard = document.querySelector("#dashboard");
+    const DashboardOn = Dashboard.getAttribute("data-visible");
+
+    if (DashboardOn === "false") {
+      Dashboard.setAttribute("data-visble", true);
+    }
+    else if (DashboardOn === "true") {
+      Dashboard.setAttribute("data-visible", false);
+    }
+  }
+
   return (
     <div className="App">
       {/* <header>
