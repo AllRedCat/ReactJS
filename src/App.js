@@ -50,10 +50,6 @@ function App() {
                 </button>
               </li>
             </ul>
-            <div>
-              <button onClick={handleButtonClick}>Change Color</button>
-              <div style={{ backgroundColor }}>This is a div with dynamic background color.</div>
-            </div>
           </nav>
         </aside>
 
